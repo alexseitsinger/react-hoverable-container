@@ -1,6 +1,6 @@
 {
   "name": "@alexseitsinger/react-hoverable-container",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A container with a hover/unhover event attached.",
   "main": "dist/main.js",
   "homepage": "https://github.com/alexseitsinger/react-hoverable-container",
