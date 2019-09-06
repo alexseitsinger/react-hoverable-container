@@ -16,6 +16,23 @@ A container that has a mouseEnter and mouseLeave event handler.
     -   `props.containerStyle` **[object][1]?** Extra css styles to apply to the container.
     -   `props.delay` **[number][3]** The number of milliseconds to wait for both mouse events. (optional, default `300`)
 
+### Examples
+
+```javascript
+import { HoverableContainer } from
+"@alexseitsinger/react-hoverable-container"
+
+const App = ({ onMouseEnter, onMouseLeave, ... }) => {
+  return (
+    <HoverableContainer
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}>
+      <div>Some other content</div>
+    </HoverableContainer>
+  )
+}
+```
+
 Returns **[function][2]** A component
 
 [1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
