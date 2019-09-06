@@ -56,7 +56,8 @@
     "@emotion/core": "10.0.17",
     "@emotion/styled": "10.0.17",
     "core-js": "3.2.1",
-    "prop-types": "15.7.2"
+    "prop-types": "15.7.2",
+    "underscore": "^1.9.1"
   },
   "peerDependencies": {
     "react": "16.8.6"
