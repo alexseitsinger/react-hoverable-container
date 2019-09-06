@@ -4,6 +4,39 @@ import _ from "underscore"
 
 import { Container } from "./elements"
 
+/**
+ * A container that has a mouseEnter and mouseLeave event handler.
+ *
+ * @param {object} props
+ * @param {function} props.onMouseEnter
+ * The function to invoke when the mouse enters the container.
+ * @param {function} props.onMouseLeave
+ * The function to invoke when the mouse leaves the container.
+ * @param {number} [props.onMouseEnterDelay]
+ * The number of milliseconds to wait before invoking onMouseEnter.
+ * @param {number} [props.onMouseLeaveDelay]
+ * The number of milliseconds to wait before invoking onMouseLeave.
+ * @param {object} [props.containerStyle]
+ * Extra css styles to apply to the container.
+ * @param {number} [props.delay=300]
+ * The number of milliseconds to wait for both mouse events.
+ *
+ * @example
+ * import { HoverableContainer } from
+ * "@alexseitsinger/react-hoverable-container"
+ *
+ * const App = ({ onMouseEnter, onMouseLeave, ... }) => {
+ *   return (
+ *     <HoverableContainer
+ *       onMouseEnter={onMouseEnter}
+ *       onMouseLeave={onMouseLeave}>
+ *       <div>Some other content</div>
+ *     </HoverableContainer>
+ *   )
+ * }
+ *
+ * @returns {function} A component
+ */
 export class HoverableContainer extends React.Component {
   static propTypes = {
     onMouseEnter: PropTypes.func.isRequired,
